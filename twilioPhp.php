@@ -15,7 +15,7 @@ $client = new Services_Twilio($sid, $token);
 
 // $client = new Services_Twilio($sid, $token, "2010-04-01", $http);
  
-$call = $client->account->calls->create("+441702806342", "+447949319540", "http://twimlets.com/holdmusic?Bucket=com.twilio.music.ambient", array());
+$call = $client->account->calls->create("+447949319540", "+441702806342", "http://twimlets.com/holdmusic?Bucket=com.twilio.music.ambient", array());
 echo $call->sid;
 
 ?>
