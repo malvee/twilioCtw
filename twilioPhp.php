@@ -6,9 +6,11 @@ require_once('twilio-php-master/Services/Twilio.php'); // Loads the library
 $sid = "ACf3bff83741dbbac71cc86f19e4c78884"; 
 $token = "ec08fa98cd88723f9798ec9d82df60e7"; 
 //$client = new Services_Twilio($sid, $token);
- $http = new Services_Twilio_TinyHttp('https://api.twilio.com',
- 		array('curlopts' => array(CURLOPT_SSL_VERIFYPEER => true,
-         CURLOPT_SSL_VERIFYHOST => 2) ));
+$http = new Services_Twilio_TinyHttp('https://api.twilio.com');
+
+array('curlopts' => array(CURLOPT_SSL_VERIFYPEER => true,
+
+CURLOPT_SSL_VERIFYHOST => 2) );
 
 
 
